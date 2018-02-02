@@ -1,12 +1,13 @@
 # abbas142lab4
 
 
-
+# lab4
 #include <iostream>
 #include <string.h>
 using namespace std;
 int top, front;
-//class to store the information
+
+//class to get information
 class Issue
 {
     public:
@@ -16,6 +17,7 @@ class Issue
     Issue* link; //to point to next 
     Issue(){link=NULL;};
 };
+
 class StkPal
 {
     public:
@@ -26,7 +28,7 @@ class StkPal
       top++;
       NM[top]  =  a;
    }
-/* delete an element in stack */
+/* remove an element in stack */
    void pop()
    {
       top--;
@@ -48,7 +50,7 @@ class CustomerService
     void displayIssue();
 };
 
-/*Checking Palindrome Using Array STACK*/
+/*Checking Palindromic name Using Array STACK*/
 int CustomerService::chkPalindrome(char nm[30])
 {
    top=-1;
